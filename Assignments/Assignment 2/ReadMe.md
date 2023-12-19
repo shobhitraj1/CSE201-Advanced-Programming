@@ -1,6 +1,6 @@
 AP Assignment 2 (Section A) - Zoo Management System - Object-Oriented Programming (OOPs) Implementation
 
-Name - Shobhit Raj (shobhit22482@iiitd.ac.in)
+Name - Shobhit Raj (shobhit22482@iiitd.ac.in) <br>
 Roll No. - 2022482
 
 Assignment Description ->
@@ -18,7 +18,7 @@ Object-Oriented Principles Applied ->
    the system without disrupting existing code.
 
 2. Abstract Classes -
-   Abstract classes allows us to define common functionality while leaving specific implementation details to derived classes.
+   Abstract classes allows us to define common functionality while leaving specific implementation details to derived classes.<br>
    In my code, I have implemented abstract classes :-
 
    Visitor Abstract Class: I have created an abstract class called "Visitors" to serve as a common base for different types of visitors in the zoo management system.
@@ -33,8 +33,8 @@ Object-Oriented Principles Applied ->
    code. Here's how polymorphism is demonstrated in my code :-
 
    Runtime Polymorphism (Dynamic Method Dispatch) / Method Overriding :
-   I have created an object of a subclass and assign it to a reference variable of the superclass,
-   "Animal animal = new Mammal();" -> In this case, Animal is the superclass, and Mammal is a subclass that extends Animal. The Mammal class overrides (provides its implementation of) methods
+   I have created an object of a subclass and assign it to a reference variable of the superclass,<br>
+   "Animal animal = new Mammal();" -> In this case, Animal is the superclass, and Mammal is a subclass that extends Animal. <br>The Mammal class overrides (provides its implementation of) methods
    defined in the Animal class. The overridden methods of the Mammal class will be called at runtime. For example, if the Animal class has a method makeNoise(), and Mammal overrides this method, calling
    animal.makeNoise() will execute the makeNoise() method of the Mammal class.
    Method Overriding is also demonstrated when using Object's class methods toString(Object o), Comparator's compare(Object o1, Object o2) method & several other methods in the code.
@@ -65,84 +65,88 @@ Object-Oriented Principles Applied ->
 
 * The program follows all the good programming practices mentioned in the assignment document.
 
-How to Use (User Guide to Execute) ->
-(pom.xml file & Source Code has been attached in the zip file)
-Source Code (Main class & other classes) is present inside the src folder inside the main folder
-Type these 3 commands to run Java file
-mvn clean
-mvn compile
-mvn package
-jar file is created -> to run the jar file, you use command:
-java -jar "<path of jar file>.jar"
-java -jar "<path of jar file>.jar" org.IIITD.Main
+How to Use (User Guide to Execute) -><br>
+(pom.xml file & Source Code has been attached in the zip file)<br>
+Source Code (Main class & other classes) is present inside the src folder inside the main folder <br>
+Pre-Requisites --> <br>
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) installed on your machine. (or any Java IDE) <br>
+[Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) installed. <br>
+Adjust the package line at the top of each Java file to match your IntelliJ directory structure. <br>
+Type these 3 commands to run Java file <br>
+mvn clean <br>
+mvn compile <br>
+mvn package <br>
+jar file is created -> to run the jar file, you use command: <br>
+java -jar "\<path of jar file\>.jar" <br>
+java -jar "\<path of jar file\>.jar" org.IIITD.Main <br>
 
 Assumptions made for the assignment ->
 1. Some attractions, animals, deals, discounts & visitors have been hard coded at the starting of the program to make it easier for testing.
    (They are not just typed & hardcoded in the list, they are created as Objects using their respective classes, so OOPS principles is incorporated) &
-   Admin can further add, modify & remove each one of them using the manage() option.
+   Admin can further add, modify & remove each one of them using the manage() option. <br>
 2. When both deal & discount are applicable when buying the tickets, they both are combined & applied on the final cost
-   i.e. Total Discount % = (Deal % + Discount Code %)
-3. The Discount Code MINOR10 is replaced by STUDENT10 (Just the category name has changed to Student) - the criteria (age<18) & functionality is same.
-4. You have to enter "None" if you don't want to apply any discount code.
-5. Visitors are distinguished by their unique email & password. Other details can be same for d/f visitors.
+   i.e. Total Discount % = (Deal % + Discount Code %)<br>
+3. The Discount Code MINOR10 is replaced by STUDENT10 (Just the category name has changed to Student) - the criteria (age<18) & functionality is same.<br>
+4. You have to enter "None" if you don't want to apply any discount code.<br>
+5. Visitors are distinguished by their unique email & password. Other details can be same for d/f visitors.<br>
 6. The most popular attraction shows both the "Most visited Attraction" & "Attraction with most tickets bought" to avoid confusion.
-   (When all the attractions have same no. of visits, it displays the first attraction in the list)
-7. If the animal is already added in the zoo & the admin adds it again using addAnimal(), it's count is increased.
+   (When all the attractions have same no. of visits, it displays the first attraction in the list)<br>
+7. If the animal is already added in the zoo & the admin adds it again using addAnimal(), it's count is increased.<br>
 8. 6 animals (2 of each type) is added (hard coded) in the beginning, the admin must ensure that there are atleast 2 animals of each type in
-   the zoo (as mentioned in the assignment document) so they can't remove animal of specific type when there are only 2 left, they can add more animals of that type & then remove easily.
-9. No of Visitors (Stats) displays both "No of visitor registered" and "No of visitors who have actually visited any animal/attraction". Both the data are showed to avoid the confusion what is meant by the term "Visitor"
-10. 2 categories of Discount (Student & Senior) mentioned in the assignment are included in the program, in addition, the admin can add new discounts that are applicable to all visitors like FESTIVAL30 (30% off on Category Festival), etc.
+   the zoo (as mentioned in the assignment document) so they can't remove animal of specific type when there are only 2 left, they can add more animals of that type & then remove easily.<br>
+9. No of Visitors (Stats) displays both "No of visitor registered" and "No of visitors who have actually visited any animal/attraction". Both the data are showed to avoid the confusion what is meant by the term "Visitor"<br>
+10. 2 categories of Discount (Student & Senior) mentioned in the assignment are included in the program, in addition, the admin can add new discounts that are applicable to all visitors like FESTIVAL30 (30% off on Category Festival), etc.<br>
 11. Note that valid input should be provided like when entering names of the attractions, animals, Discount Codes, Discount percentage (between 0-100) etc.
     (All the inputs are CASE SENSITIVE, so enter accordingly).
 
-Upon launching the application, you will see the main menu with the following options:
-Enter as an admin (1)
-Enter as a visitor (2)
-View Special Deals (3) -> View the existing special deals and their details.
-Exit (4)
+Upon launching the application, you will see the main menu with the following options:<br>
+Enter as an admin (1)<br>
+Enter as a visitor (2)<br>
+View Special Deals (3) -> View the existing special deals and their details.<br>
+Exit (4)<br>
 Select the option & proceed :-
 
-To Log in as Admin
-Username: admin
-Password: admin123
+To Log in as Admin<br>
+Username: admin<br>
+Password: admin123<br>
 
-Admin Mode - Admin Functionalities ->
--Manage Attractions (Option 1): View attractions, Add new attractions with descriptions and ticket prices, modify (edit) their details or remove.
--Manage Animals (Option 2): View animals, Add new animals with details like species, description, and the sound they make, modify their info or remove any animal.
--Schedule Attraction (Option 3): Specify the opening status of each attraction.
--Manage Discounts (Option 4): View discounts, Create discount categories (e.g., Student, Senior) with a discount percentage and a unique discount code, modify or remove any discount.
--Manage Special Deals (Option 5): View deals, Define special deals that offer discounts based on the number of tickets purchased together, modify or remove any deal.
--View Visitor Stats (Option 6): View the number of registered visitors and their details, Most popular attraction & the revenue of the zoo.
--View Feedback (Option 7): View feedback provided by visitors.
--Exit Admin mode (Option 8): Choose option 8 to return to the main menu.
+Admin Mode - Admin Functionalities -><br>
+-Manage Attractions (Option 1): View attractions, Add new attractions with descriptions and ticket prices, modify (edit) their details or remove.<br>
+-Manage Animals (Option 2): View animals, Add new animals with details like species, description, and the sound they make, modify their info or remove any animal.<br>
+-Schedule Attraction (Option 3): Specify the opening status of each attraction.<br>
+-Manage Discounts (Option 4): View discounts, Create discount categories (e.g., Student, Senior) with a discount percentage and a unique discount code, modify or remove any discount.<br>
+-Manage Special Deals (Option 5): View deals, Define special deals that offer discounts based on the number of tickets purchased together, modify or remove any deal.<br>
+-View Visitor Stats (Option 6): View the number of registered visitors and their details, Most popular attraction & the revenue of the zoo.<br>
+-View Feedback (Option 7): View feedback provided by visitors.<br>
+-Exit Admin mode (Option 8): Choose option 8 to return to the main menu.<br>
 
-Visitors can perform the following actions:
+Visitors can perform the following actions:<br>
 Register - Provide personal information to create a visitor account.
 (Verification is done such that the provided email and password are unique)
-Login - Log in with a registered email and password.
-(Some visitor have been registered & hard coded to make it easier for testing) - You can register more visitors using "Register" option
-Visitor 1 (Student category) - Email: ta1@iiitd ; Password: ta1
-Visitor 2 (Senior category) - Email: ta2@iiitd ; Password: ta2
-Visitor 3 (No category) - Email: ta3@iiitd ; Password: ta3
+Login - Log in with a registered email and password.<br>
+(Some visitor have been registered & hard coded to make it easier for testing) - You can register more visitors using "Register" option<br>
+Visitor 1 (Student category) - Email: ta1@iiitd ; Password: ta1<br>
+Visitor 2 (Senior category) - Email: ta2@iiitd ; Password: ta2<br>
+Visitor 3 (No category) - Email: ta3@iiitd ; Password: ta3<br>
 
-Visitor Mode - Visitor Functionalities ->
--Explore the Zoo (Option 1): Choose between viewing attractions and animals. Get details about attractions and animals. Choose specific attractions/animal to learn more about.
--Buy Membership (Option 2): Purchase basic or premium memberships. Apply discount codes for further savings (if available & eligible).
--Buy Tickets (Option 3): Purchase tickets for attractions (For Basic Members). Apply discount codes and special deals (applied automatically on the basis of number of tickets bought) for savings.
-(Both the buy options check's visitor's balance before purchasing)
--View Discounts (Option 4): View the available discount categories and their associated codes and discount percentages.
--View Special Deals (Option 5): View the existing special deals and their details.
--Visit Animals (Option 6): Interact with animals. Choose to feed an animal or read more about it.
--Visit Attractions (Option 7): Explore attractions, keeping in mind membership requirements and ticket purchases. (if the attraction is "OPEN")
--Leave Feedback (Option 8): Provide feedback about your experience.
--Recharge Balance (Option 9): Add funds to your visitor account for purchasing memberships and tickets.
--Log Out (Option 10): Log out from your visitor account. Returns to the main menu.
+Visitor Mode - Visitor Functionalities -><br>
+-Explore the Zoo (Option 1): Choose between viewing attractions and animals. Get details about attractions and animals. Choose specific attractions/animal to learn more about.<br>
+-Buy Membership (Option 2): Purchase basic or premium memberships. Apply discount codes for further savings (if available & eligible).<br>
+-Buy Tickets (Option 3): Purchase tickets for attractions (For Basic Members). Apply discount codes and special deals (applied automatically on the basis of number of tickets bought) for savings.<br>
+(Both the buy options check's visitor's balance before purchasing)<br>
+-View Discounts (Option 4): View the available discount categories and their associated codes and discount percentages.<br>
+-View Special Deals (Option 5): View the existing special deals and their details.<br>
+-Visit Animals (Option 6): Interact with animals. Choose to feed an animal or read more about it.<br>
+-Visit Attractions (Option 7): Explore attractions, keeping in mind membership requirements and ticket purchases. (if the attraction is "OPEN")<br>
+-Leave Feedback (Option 8): Provide feedback about your experience.<br>
+-Recharge Balance (Option 9): Add funds to your visitor account for purchasing memberships and tickets.<br>
+-Log Out (Option 10): Log out from your visitor account. Returns to the main menu.<br>
 
-Exiting the Application: To exit the application, choose option 4 from the main menu
+Exiting the Application: To exit the application, choose option 4 from the main menu<br>
 
-->Follow the steps outlined above to interact with the system effectively.
-->Please note that the provided code includes some initial data, such as attractions, animals, discounts, and deals, hard-coded for testing and demonstration purposes.
-You can modify this data as required for your specific use case.
+->Follow the steps outlined above to interact with the system effectively.<br>
+->Please note that the provided code includes some initial data, such as attractions, animals, discounts, and deals, hard-coded for testing and demonstration purposes.<br>
+You can modify this data as required for your specific use case.<br>
 
 Conclusion ->
 This Zoo Management System demonstrates the effective use of OOP principles, including interfaces, abstract classes, polymorphism, inheritance, object class & encapsulation to create
