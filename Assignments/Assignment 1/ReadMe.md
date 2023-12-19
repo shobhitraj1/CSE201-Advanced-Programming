@@ -43,6 +43,7 @@ Pre-Requisites --> <br>
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) installed on your machine. (or any Java IDE) <br>
 [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) installed. <br>
 Adjust the package line at the top of each Java file to match your IntelliJ directory structure. <br>
+If you face any difficulty in running the files after following the above steps, create a new project using your own IntelliJ, create the same java files and copy my code in those files. <br>
 Type these 3 commands to run Java file <br>
 mvn clean <br>
 mvn compile <br>
