@@ -39,6 +39,10 @@ misusing/changing information like unique IDs.
 How to Use (User Guide to Execute) -><br>
 (pom.xml file & Source Code has been attached in the zip file)<br>
 Source Code (Main class & other classes) is present inside the src folder inside the main folder <br>
+Pre-Requisites --> <br>
+[IntelliJ IDEA](https://www.jetbrains.com/idea/) installed on your machine. (or any Java IDE) <br>
+[Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) installed. <br>
+Adjust the package line at the top of each Java file to match your IntelliJ directory structure. <br>
 Type these 3 commands to run Java file <br>
 mvn clean <br>
 mvn compile <br>
