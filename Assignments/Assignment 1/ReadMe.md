@@ -32,18 +32,21 @@ encapsulates functionality that applies to both librarians and members.
 Relationships Between Classes -
 Objects of the Member class are associated with objects of the Book class when members borrow books. This is achieved through attributes like b1 and
 b2 in the Member class, which reference book objects.
+
 Private attributes have been used at appropriate places like details of Members & Books to prevent 
 misusing/changing information like unique IDs.
 
 How to Use (User Guide to Execute) ->
+
 (pom.xml file & Source Code has been attached in the zip file)
-Source Code (Main class & other classes) is present inside the src folder inside the main folder
-Type these 3 commands to run Java file 
-mvn clean
-mvn compile
-mvn package
-jar file is created -> to run the jar file, you use command:
-java -jar "<path of jar file>.jar"
+
+Source Code (Main class & other classes) is present inside the src folder inside the main folder <br>
+Type these 3 commands to run Java file <br>
+mvn clean <br>
+mvn compile <br>
+mvn package <br>
+jar file is created -> to run the jar file, you use command: <br>
+java -jar "<path of jar file>.jar" <br>
 
 Upon launching the application, you will see the main menu with the following options:
 Enter as a librarian (1)
