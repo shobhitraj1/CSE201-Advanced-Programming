@@ -37,7 +37,6 @@ Private attributes have been used at appropriate places like details of Members 
 misusing/changing information like unique IDs.
 
 How to Use (User Guide to Execute) -><br>
-(pom.xml file & Source Code has been attached in the zip file)<br>
 Source Code (Main class & other classes) is present inside the src folder inside the main folder <br>
 Pre-Requisites --> <br>
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) installed on your machine. (or any Java IDE) <br>
