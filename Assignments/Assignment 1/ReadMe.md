@@ -48,7 +48,7 @@ mvn clean <br>
 mvn compile <br>
 mvn package <br>
 jar file is created -> to run the jar file, you use command: <br>
-java -jar "<path of jar file>.jar" <br>
+java -jar "\<path of jar file\>.jar" <br>
 
 Upon launching the application, you will see the main menu with the following options:<br>
 Enter as a librarian (1)<br>
