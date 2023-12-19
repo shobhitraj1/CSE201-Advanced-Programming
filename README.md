@@ -1,6 +1,6 @@
 # CSE201-Advanced-Programming
 
-📘 **Course Overview:**
+📘 **Course Overview:** <br>
 This repository contains my coursework, assignments, and solutions for the [Advanced Programming](https://techtree.iiitd.edu.in/viewDescription/filename?=CSE201) course at IIIT Delhi in Monsoon 2023. <br>
 The course covers key topics such as Object-Oriented Programming (OOP) principles, generic programming, multithreading, and other essential concepts in Java.
 
@@ -12,8 +12,8 @@ The course covers key topics such as Object-Oriented Programming (OOP) principle
 📅 **Semester:**
 3rd Semester (2nd Year)
 
-📚 **Course Details:**
-Instructor's name - Raghava Mutharaju (raghava.mutharaju@iiitd.ac.in)
+📚 **Course Details:**<br>
+Instructor's name - Raghava Mutharaju (raghava.mutharaju@iiitd.ac.in)<br>
 Course Code - CSE201
 
 📌 **Important:**
