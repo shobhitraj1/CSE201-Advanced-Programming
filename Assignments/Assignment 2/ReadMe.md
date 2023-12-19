@@ -66,7 +66,6 @@ Object-Oriented Principles Applied ->
 * The program follows all the good programming practices mentioned in the assignment document.
 
 How to Use (User Guide to Execute) -><br>
-(pom.xml file & Source Code has been attached in the zip file)<br>
 Source Code (Main class & other classes) is present inside the src folder inside the main folder <br>
 Pre-Requisites --> <br>
 [IntelliJ IDEA](https://www.jetbrains.com/idea/) installed on your machine. (or any Java IDE) <br>
