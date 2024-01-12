@@ -4,7 +4,7 @@ Name - Shobhit Raj (shobhit22482@iiitd.ac.in) <br>
 Roll No. - 2022482
 
 Assignment Description ->
-This Java application represents a Zoo Management System that leverages OOP principles to model and manage the functionalities of a library.
+This Java application represents a Zoo Management System that leverages OOP principles to model and manage the functionalities of a Zoo.
 The code is organized into classes that encapsulate distinct entities and functionalities, fostering a clear and maintainable structure.
 
 Object-Oriented Principles Applied ->
